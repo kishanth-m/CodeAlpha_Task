@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>My Image Gallery</h1>
+    
+    <!-- Filters -->
+    <div class="filters">
+      <button onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('city')">City</button>
+      <button onclick="filterImages('art')">Art</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery" id="gallery">
+      <div class="image nature"><img src="images/img1.jpg" alt="img1" onclick="openLightbox(0)"/></div>
+      <div class="image city"><img src="images/img2.jpg" alt="img2" onclick="openLightbox(1)"/></div>
+      <div class="image art"><img src="images/img3.jpg" alt="img3" onclick="openLightbox(2)"/></div>
+      <div class="image nature"><img src="images/img4.jpg" alt="img4" onclick="openLightbox(3)"/></div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,4 +1,5 @@
-#CodeAlpha_task
+# CodeAlpha_task
+
 # Responsive Image Gallery with Lightbox, Filters and Animations
 
 This is a modern, responsive image gallery web application featuring filterable categories, lightbox viewing, and smooth animated transitions.
